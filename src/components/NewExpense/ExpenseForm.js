@@ -68,7 +68,7 @@ const ExpenseForm= (props)=>{
                     <input 
                         type="number" 
                         min="0.01" 
-                        step="0.1" 
+                        step="0.01" 
                         value={enteredAmount}
                         onChange={amountChangeHandler}>
                     </input>
@@ -84,7 +84,7 @@ const ExpenseForm= (props)=>{
                     </input>
                 </div>
             </div>
-            <div className="new-expense__action">
+            <div className="new-expense__actions">
                 <button type="submit">
                     Add Expense
                 </button>
