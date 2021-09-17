@@ -4,8 +4,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    margin: 1rem 0;
-    background-color: #4b4b4b;
+    margin: 1.2rem 1rem;
+    background-color: #787779;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 1px rgba(129, 98, 180, 0.651);
+  
   }
   
   .expense-item__description {
@@ -19,17 +22,18 @@
   }
   
   .expense-item h2 {
-    color: #3a3a3a;
     font-size: 1rem;
     flex: 1;
-    margin: 0 1rem;
-    color: white;
+    margin: 0 1.5rem;
+    color: rgb(86, 62, 129);
   }
   
   .expense-item__price {
     font-size: 1rem;
     font-weight: bold;
     color: white;
+    text-shadow: teal;
+    
     background-color: #40005d;
     border: 1px solid white;
     padding: 0.5rem;
