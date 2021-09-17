@@ -25,6 +25,11 @@ const ExpenseItem= (props) =>{
                     Change title
                 </button>
             </div>
+            <div className="expense_delete">
+                <button >
+                    Delete Expense
+                </button>
+            </div>
         </div>
     );
 }

@@ -27,3 +27,29 @@
     box-shadow: 3px 3px 3px 1px rgba(145, 73, 153, 0.63);
   
   }
+
+  .foundEle{
+    text-align: center;
+    background-color: rgb(59, 59, 59);
+    margin: 3px;
+    padding: 3px;
+    border-radius: 10px;
+    color: whitesmoke;
+  }
+
+  .expense_delete  button {
+    background-color: #ad84a8;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 1px rgba(168, 153, 190, 0.651);
+    font: inherit;
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    border: 1px solid #40005d;
+    background-color: #441758;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    box-shadow: 3px 3px 3px 2px rgba(99, 67, 100, 0.767);
+    
+  }
