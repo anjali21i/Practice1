@@ -1,8 +1,9 @@
 .new-expense__controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 1rem;
   text-align: left;
 }
 
@@ -16,11 +17,17 @@
   font: inherit;
   padding: 0.5rem;
   border-radius: 6px;
-  border: 1px solid #ccc;
-  width: 20rem;
+  border: 1px solid rgb(208, 160, 236);
+  width: 17rem;
   max-width: 100%;
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
+.new-expense__control input:hover {
+  border-color: rgb(159, 117, 212);
+  border-width: 2px;
+}
 .new-expense__actions {
   text-align: right;
 }

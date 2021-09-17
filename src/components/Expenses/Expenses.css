@@ -5,3 +5,25 @@
     width: 50rem;
     max-width: 95%;
   }
+
+  .new-expense__actions button {
+    font: inherit;
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    box-shadow: 3px 3px 3px 2px rgba(99, 67, 100, 0.767);
+  
+  }
+
+  .new-expense__actions button:hover {
+
+    border: 1px solid #3c0a53;
+    background-color: #4e086e;
+    box-shadow: 3px 3px 3px 1px rgba(145, 73, 153, 0.63);
+  
+  }

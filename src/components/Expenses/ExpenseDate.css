@@ -9,6 +9,10 @@
     border-radius: 12px;
     align-items: center;
     justify-content: center;
+    margin:2px 0 5px 8px; 
+    padding: 1px 5px 1px 5px;
+    box-shadow: 3px 3px 3px 2px rgba(45, 44, 46, 0.651);
+    
   }
   
   .expense-date__month {
@@ -21,6 +25,6 @@
   }
   
   .expense-date__day {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
   }
