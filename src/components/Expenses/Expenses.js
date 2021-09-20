@@ -1,7 +1,7 @@
 import ExpensesFilter from "./ExpensesFilter";
-import ExpenseItem  from "./ExpenseItem";
 import './Expenses.css';
 import { useState } from "react";
+import ExpensesList from "./ExpensesList";
 //import Card from "../UI/Card";
 
 const Expenses = (props) => {
@@ -14,35 +14,20 @@ const Expenses = (props) => {
     const filteredExpenses = props.items.filter(expense =>{
         return expense.date.getFullYear().toString()=== filterYear;
     });
-    let expenseContent = <div className="foundEle">
-        <p>No Expense Found.</p>
-    </div>;
 
-    if(filteredExpenses.length>0){
-        expenseContent = filteredExpenses.map((expense) => (
-            <ExpenseItem 
-                key= {expense.id}
-                title= {expense.title}
-                amount= {expense.amount}
-                date= {expense.date}   
-            />
-        ));
-    }
     return(
         <div>
             <div className="expenses">
                 <ExpensesFilter 
                     selected = {filterYear} 
-                    onChangeFilter = {filterChangeHandler}
+                    onChangeFilter = {
+                        filterChangeHandler
+                    }
                 />
-                {expenseContent}
-
-
-                {/* {filteredExpenses.length ===0 ? (
-                    <div className="foundEle">
-                        <p>No Expense Found.</p>
-                    </div>
-                ) : (
+                <ExpensesList item={filteredExpenses}/>
+                
+                {/* {filteredExpenses.length ===0 && <p>No Expense Found.</p>}
+                    {filteredExpenses.length> 0 && 
                     filteredExpenses.map((expense) => (
                     <ExpenseItem 
                         key= {expense.id}
@@ -50,8 +35,8 @@ const Expenses = (props) => {
                         amount= {expense.amount}
                         date= {expense.date}   
                     />
-                    ))
-                )}    */}
+                    ))}
+                */}
                    
                {
                 /*  <ExpenseItem 
