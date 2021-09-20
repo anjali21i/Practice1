@@ -11,7 +11,7 @@ const ExpensesList = (props) => {
 
     if(props.items.length===0){
         return <h2 className='expenses-list__fallback'>
-            Found No Expenses
+            Found No Expenses.
             </h2>
     }
 
